@@ -1,4 +1,4 @@
-# Usage docker run -it --restart=always -v /etc/localtime:/etc/localtime  stream.downloader -- https://youtube.com/live/0qPRKqRp-ys 5 120
+# Usage docker run -it --restart=always -v /etc/localtime:/etc/localtime  beejay/stream.downloader -- https://youtube.com/live/0qPRKqRp-ys 5 120
 FROM jrottenberg/ffmpeg
 MAINTAINER Sascha Bajonczaj <xbeejayx@hotmail.com>
 ADD entrypoint.sh /entrypoint.sh
