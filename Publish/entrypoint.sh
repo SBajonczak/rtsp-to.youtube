@@ -16,8 +16,6 @@ LIVE_ID=$2
 >&2 echo "IP_CAMERA_ADDRESS=$IP_CAMERA_ADDRESS"
 >&2 echo "LIVE_ID=$LIVE_ID"
 
-## Note: YouTube will not accept a stream without audio, even if there is none
-## Getting audio from /dev/zero to fill it in with something
 
 exec ffmpeg \
   -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 \
