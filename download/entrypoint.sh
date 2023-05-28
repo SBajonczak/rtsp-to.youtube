@@ -21,4 +21,5 @@ do
   echo "$URL" | xargs -n 1 -I {} ffmpeg -t $DURATION_IN_SECONDS -i "{}" -f null -
   echo "Waiting for $DURATION_IN_SECONDS_TO_WAIT seconds"
   sleep $DURATION_IN_SECONDS_TO_WAIT
+  rm /data/*.*
 done
